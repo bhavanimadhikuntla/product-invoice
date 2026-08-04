@@ -21,9 +21,7 @@ import com.product.service.ProductService;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(
- origins="https://spring-boot-with-react-git-299951212402.us-central1.run.app"
-)
+@CrossOrigin(origins = "*")
 public class ProductController {
 @Autowired
 private ProductService prodservice;
