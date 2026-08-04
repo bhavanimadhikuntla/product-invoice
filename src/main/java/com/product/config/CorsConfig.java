@@ -24,7 +24,9 @@ public class CorsConfig {
                     "PUT",
                     "DELETE",
                     "OPTIONS"
-                );
+                )
+                .allowedHeaders("*")  // REQUIRED: Allows Content-Type, Authorization, etc.
+                .exposedHeaders("*"); 
             }
         };
     }
